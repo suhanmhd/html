@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar  fixed-top navbar-expand-sm text-danger">
+            <a class="navbar-brand" href=""><img class="img-fluid" width="110px"
+                    src="data:image/png;base64,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"
+                    alt=""></a>
+            <ul class="  navbar-nav ms-auto navbar-nav">
+                <li class="navbar-iteam"><a class="nav-link text-white" href="">
+                        <h6>Home</h6>
+                    </a></li>
+                <li class="navbar-iteam"><a class="nav-link text-white" href="">
+                        <h6>Series</h6>
+                    </a></li>
+                <li class="navbar-iteam"><a class="nav-link text-white" href="">
+                        <h6>Movies</h6>
+                    </a></li>
+                <li class="navbar-iteam"><a class="nav-link text-white" href="">
+                        <h6>My List</h6>
+                    </a></li>
+                <li class="navbar-iteam"><a class="nav-link text-white" href="">
+                        <h6>About Us</h6>
+                    </a></li>
+                    
+                       
+                </ul>
+
+                <div style="margin-left: 700px;">
+                    <button class="btn btn-danger"> Sign In</button> 
+                 </div>
+           
+        </nav>
+      
+    </header>
+    <section>
+        <div id="demo" class="carousel slide " data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="http://m.gettywallpapers.com/wp-content/uploads/2021/08/Money-Heist-5-Wallpaper-1536x864.jpg"
+                        alt="" width="1800" height="650">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images8.alphacoders.com/121/thumb-1920-1218962.jpg" alt="" width="1800"
+                        height="650">
+                </div>
+                <div class="carousel-item active">
+                    <img src="https://greatloveart.com/wp-content/uploads/2021/12/Spider-Man-No-Way-Home-Artwork-4k.jpg"
+                        alt="" width="1800" height="650">
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+        <!-- <div class="d-flex justify-content-center " style="background-color: black; height: 200px;">
+            <button class="btn btn-danger ml-2 mr-4">Watch Now</button>
+            <button class="btn btn-danger">Download</button>
+
+        </div> -->
+
+    </section>
+
+    <section>
+        <div>
+
+            <div class="center">
+                <h1 class="font">Unlimited movies,TV <br> &nbsp;&nbsp; shows and more.</h1>
+                <h4> &nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Watch
+                    anywhere. Cancel anytime.<br></h4>
+                <br>
+                <h5>Ready to watch? Enter your email to create or restart your membership. </h5>
+
+                <!-- <div class="input-group mb-3">
+                        <input  type="text" class="form-control" placeholder="Email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-danger" type="button" id="button-addon2">Get Started</button>
+                      </div> -->
+                <div class="inptbox">
+                    <input class="inputbox1" type="text" placeholder="Email address"><button style="height: 70px;"
+                        class=" btn-danger">
+                        <h3>Get Started ></h3>
+                    </button>
+                </div>
+            </div>
+            <div class="img2">
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <section class="section2">
+        <div class="d-flex flex-wrap ">
+            <div class="s2d1">
+                <div class="font2">
+                    Enjoy on your TV.<br>
+
+                </div>
+
+                <div>
+                    <h3>Watch on smart TVs, PlayStation, Xbox,<br>
+                        Chromecast, Apple TV, Blu-ray players and<br>
+                        more.</h3>
+                </div>
+            </div>
+
+            <div class="parent">
+                <div class="child1">
+                    <video height="100%" width="100%" autoplay loop muted>
+                        <source src="vidoes\Netflix Logo Animation (2013).mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="child2">
+
+                    <img style=" height:100%; width: 100%;"
+                        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </section>
+    <section class="section3">
+        <div class="d-flex flex-wrap ">
+
+            <img style="height: 400px; padding-left: 100px;"
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
+            <div class="s2d1">
+                <div class="font3">
+                    Download your shows<br>
+
+                    to watch offline.
+                </div>
+
+                <div>
+                    <br>
+                    <h3>
+                        Save your favourites easily and always have <br>
+                        something to watch.
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section4">
+        <div class="d-flex flex-wrap ">
+            <div class="s2d1">
+                <div class="font2">
+                    Watch everywhere.<br>
+
+                </div>
+
+                <div>
+                    <h3>Stream unlimited movies and TV shows on
+                        <br> your phone, tablet, laptop, and TV.
+                    </h3>
+                </div>
+            </div>
+            <div class="parent2">
+                <div class="child2-1">
+                    <video height="100%" width="100%" autoplay loop muted>
+                        <source src="vidoes\Netflix Logo Animation (2013).mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="child2-2">
+
+                    <img style=" height:100%; width: 100%;"
+                        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
+                        alt="">
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <section class="section5">
+        <div class="d-flex flex-wrap ">
+
+            <img style="height: 450px; padding-top: 80px; padding-left: 220px;"
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/kidsValueProp.png" alt="">
+
+            <div class="s2d1">
+                <div class="font3">
+                    Create profiles for <br>
+                    children.
+                </div>
+
+                <div>
+                    <br>
+                    <h3>
+                        Send children on adventures with their
+                        <br> favourite characters in a space made just for
+                        <br> them—free with your membership.
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section6">
+        <div class="container">
+            <h1 class="font4">Frequently Asked Questions</h1><br>
+            <div class="rectnglebox">
+                <h4>What is Netflix ?</h4><br>
+
+            </div>
+
+            <div class="rectnglebox" style="line-height: 1.2;">
+                <h4>How much does Netflix cost ?</h4><br>
+
+            </div>
+
+            <div class="rectnglebox" style="line-height: 1.2;">
+                <h4>Where can I watch ?</h4><br>
+
+            </div>
+            <div class="rectnglebox" style="line-height: 1.2;">
+                <h4>How do I cancel ?</h4><br>
+
+            </div>
+            <div class="rectnglebox" style="line-height: 1.2;">
+                <h4>What can I watch on Netflix ?</h4><br>
+
+            </div>
+            <div class="rectnglebox" style="line-height: 1.2;">
+                <h4>Is Netflix good for kids ?</h4><br>
+
+            </div>
+            <div style="margin-top: 60px">
+                <h6>Ready to watch? Enter your email to create or restart your membership.</h6>
+            </div>
+            <div class="inptbox">
+                <input class="inputbox1" type="text" placeholder="Email address"><button style="height: 70px;"
+                    class=" btn-danger">
+                    <h3> Get Started ></h3>
+                </button>
+            </div>
+        </div>
+
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <table align="center">
+                <tr>
+                    <th>Questions? Call 000-800-040-1843</th>
+                </tr>
+                <tr>
+                    <td>FAQ</td>
+                    <td>Help Centre</td>
+                    <td>Account</td>
+                    <td>Media Centre</td>
+                </tr>
+                <tr>
+                    <td>Investor Relations</td>
+                    <td>Jobs</td>
+                    <td>Ways to Watch</td>
+                    <td>Terms of Use</td>
+                </tr>
+                <tr>
+                    <td>Privacy</td>
+                    <td>Cookie Preferences</td>
+                    <td>Corporate Information</td>
+                    <td>Contact Us</td>
+                </tr>
+                <tr>
+                    <td>Speed Test</td>
+                    <td>Legal Notices</td>
+                    <td>Only on Netflix</td>
+
+                </tr>
+            </table>
+        </div>
+        <div class="languagebox">
+            <div class="dropdown">
+                <button class="btn btn-outline-secondary  dropdown-toggle" data-toggle="dropdown">English</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="">English</a>
+                    <a class="dropdown-item" href="">Malayalam</a>
+                    <a class="dropdown-item" href="">Hindi</a>
+
+                </div>
+            </div>
+            <br>
+            <div style="color: rgb(143, 134, 134) ;">Netflix India</div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            background-color: lightgreen;
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr ;
+            height: 600px;
+            grid-gap: 20px;
+            /* grid-column-gap: 20px; */
+            /* grid-row-gap: 20px; */
+        }
+        .section1,.section2,.section3,.section4,.section5,.section6,.section7,.section8,.section9{
+            background-color: lightpink;
+            border: 1px solid black;
+            /* width: 150px;
+            height: 150px; */
+        }
+        .section5{
+            grid-row: 3;
+            grid-column: 3;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="section1"><h1>section 1</h1></div>
+        <div class="section2"><h1>section 2</h1></div>
+        <div class="section3"><h1>section 3</h1></div>
+        <div class="section4"><h1>section 4</h1></div>
+        <div class="section5"><h1>section 5 </h1></div>
+        <div class="section6"><h1>section 6</h1></div>
+        <div class="section7"><h1>section 7</h1></div>
+        <div class="section8"><h1>section 8</h1></div>
+        <div class="section9"><h1>section 9</h1></div>
+
+    </div>
+</body>
+</html>

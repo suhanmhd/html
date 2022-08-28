@@ -1,0 +1,203 @@
+
+.navbar{
+    background-color: black;
+    height: 75px;
+    padding-left: 40px;
+
+}
+.navbar-nav{
+  float: left;
+  
+}
+.navbar-iteam{
+  padding-left: 46px;
+  /* padding-right: 10px; */
+}
+.carousel{
+    position: absolute;
+    /* border-top: 10px  rgb(33, 24, 24) solid; */
+}
+
+.container {
+      position: relative;
+    text-align: center;
+    color: white;
+    width: 100px;
+}
+.center {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 450px;
+    color:white;
+   
+  }
+  .font{
+     font-size: 70px; 
+  }
+
+  .img2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.727),rgba(0, 0, 0, 0.7)), url("https://assets.nflxext.com/ffe/siteui/vlv3/970e664f-2df4-47ce-b4fa-446082f5abc1/ccc3a1f7-2180-4f51-aa75-f9e9196c478b/IN-en-20220523-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+   width: 100%;
+   height: 780px;
+   border-top: 10px  rgb(33, 24, 24) solid;
+   
+  
+     
+  }
+.input-group-lg{
+width: 500px;
+}
+.section2{
+    background-color: black;
+    border-top: 10px  rgb(33, 24, 24) solid;
+   color:white;
+   height: 480px;
+   padding-bottom:50px;
+
+
+}
+
+.section3{
+    background-color: black;
+    border-top: 10px  rgb(33, 24, 24) solid;
+   color:white;
+   height: 480px;
+   padding-bottom:50px;
+
+
+}
+.section4{
+    background-color: black;
+    border-top: 10px  rgb(33, 24, 24) solid;
+   color:white;
+   height: 535px;
+   padding-bottom:50px;
+
+
+}
+.section5{
+    background-color: black;
+    border-top: 10px  rgb(33, 24, 24) solid;
+   color:white;
+   height: 535px;
+   padding-bottom:50px;
+}
+
+.section6{
+    background-color: black;
+    border-top: 10px  rgb(33, 24, 24) solid;
+   color:white;
+   height: 970px;
+   padding-bottom:50px;
+   padding-top: 70px;
+}
+
+
+
+
+.s2d1{
+    padding-top: 150px;
+    padding-left: 100px;
+  
+    
+}
+.font2{
+    
+  font-size: 47px;
+   font-weight: bold;
+   line-height: 1.8;
+}
+.font3{
+    
+    font-size: 47px;
+     font-weight: bold;
+     line-height: 1.1;
+  }
+  .font4{
+    
+    font-size: 45px;
+     font-weight: bold;
+     line-height: 1.8;
+  }
+
+  .rectnglebox{
+      background-color:rgb(70, 54, 54);
+      width: 776px;
+      height: 70px;
+      margin-left: 180px;
+      padding-top: 20px;
+    padding-left: 20px;
+      margin-bottom: 9px;
+      text-align:left;
+     
+  }
+  .inputbox1{
+      margin-top: 9px;
+      width: 500px;
+      height: 69px;
+      padding-left: 8px;
+  }
+  .footer{
+    background-color: black;
+    border-top: 10px  rgb(33, 24, 24) solid;
+   color:white;
+   height: 410px;
+  padding-top: 50px;
+
+  }
+  th,td{
+      padding-right: 37px;
+      padding-top: 14px;
+      text-align: left;
+      color: rgb(143, 134, 134);
+  }
+  .languagebox{
+      margin-left: 360px;
+      margin-top: 30px;
+   
+  }
+  .parent{
+      position: relative;
+      height: 400px;
+       padding-left: 150px; 
+      margin-top: 10px;
+  }
+  .child1{
+    height: 410px;
+   width: 500px;
+    
+  }
+  .child2{
+    height: 410px;
+    width: 560px;
+      position: absolute;
+      top: 0;
+  }
+.parent2{
+    position: relative;
+    height: 470px;
+    margin-top: 50px;
+     padding-left: 100px;
+}
+.child2-1{
+    height: 419px;
+    width: 330px;
+    margin-left: 100px;
+  padding-bottom: 90px;
+  
+
+}
+.child2-2{
+    margin-top: 30px;
+    height: 390px;
+    width: 530px;
+    position: absolute;
+    top: 0;
+}
+/* 
+@media screen and max-width(576px) {
+  
+      
+
+
+} */

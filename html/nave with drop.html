@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+.navbar {
+  position: fixed;
+  overflow: hidden;
+  background-color: rgb(136, 124, 124);
+}
+
+.navbar a {  
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center; 
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;  
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(104, 75, 75);
+}
+
+.dropdown-content {
+  display: none;    
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(59, 13, 13, 0.2);
+  
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(12, 11, 11);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.div1{
+  height: 1000px;
+  background: black;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">about</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+  <a href="#">Help</a>
+  <a href="">Quit</a>
+</div>
+<div class="div1">
+
+</div>
+
+</body>
+</html>

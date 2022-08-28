@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+          background-color: green;
+          width: 200px;
+          height: 200px;
+          animation-name: abc;
+          animation-duration: 4s;
+          position: absolute;
+          animation-iteration-count: infinite;
+
+        }
+/* 
+        @keyframes abc{
+
+            from{
+                background-color: rebeccapurple;
+            }
+            to{
+                background-color: yellow;
+            }
+        } */
+
+        /* @keyframes abc{
+          0%{background-color: white;}
+          25%{background-color: blue;}
+          50%{background-color: red;}
+          100%{background-color: yellow;}
+
+
+        } */
+
+        @keyframes abc{
+          0%{background-color: white;
+            top: 0;
+            left: 0;
+        }
+          25%{background-color: blue;
+           top: 0;
+            left: 400px;
+        }
+          50%{background-color: red;
+            top: 400;
+            left: 400px;
+        }
+        75%{background-color: lightseagreen ;
+                left: 0px;
+                top: 700px;
+
+            }
+        
+          100%{background-color: yellow;
+            top: 0;
+            left: 0;
+        }
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
